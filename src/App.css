@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black; /* Black background for the whole page */
+  color: white; /* White text color */
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: black; /* Black color for the heading */
+  text-transform: uppercase; /* Uppercase for the heading */
+  font-weight: bold; /* Bold font for the heading */
+  background-color: white; /* White background for the heading */
+  padding: 10px; /* Padding around the heading */
+  border-radius: 5px; /* Rounded corners for the heading background */
+}
+
+.table-container {
+  margin: 20px auto;
+  max-width: 800px; /* Set a max width for the table container */
+  border-radius: 8px;
+  overflow: hidden; /* To apply rounded corners */
+}
+
+table {
+  width: 100%; /* Full width of the container */
+  border-collapse: collapse; /* Collapse borders */
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white background for the table */
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid white; /* White solid border for table cells */
+}
+
+th {
+  background-color: rgba(255, 255, 255, 0.2); /* Light background for the header */
+}
+
+/* Define column colors */
+td:nth-child(1), th:nth-child(1) {
+  background-color: rgb(37, 78, 174); /* Violet for the first column */
+}
+td:nth-child(2), th:nth-child(2) {
+  background-color: rgb(167, 155, 81); /* Green for the second column */
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05); /* Light background for even rows */
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly darker background for odd rows */
+}
+
+button {
+  padding: 5px 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+input, select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid white; /* White border for input fields */
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background for input fields */
+  color: white; /* White text color for input fields */
+}
+
+input:focus, select:focus {
+  outline: none; /* Remove outline on focus */
+  border-color: #007bff; /* Change border color on focus */
+}
